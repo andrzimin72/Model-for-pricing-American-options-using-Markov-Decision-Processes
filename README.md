@@ -76,7 +76,7 @@ e) Hybrid Workflow:
 I think traditional finance often treats option pricing as a pure valuation problem. But American options are fundamentally decision problems -and that’s where MDPs shine. These scripts don’t just give a price; they reveal how a rational agent should behave under uncertainty.
 May be this perspective is increasingly valuable in real options analysis in corporate finance.
 
-## 4. Possible Questions:
+## 4. Possible Questions
 - pricing and policy extraction for American options under dividends or stochastic volatility;
 - use MDP for accuracy in 1–2D; use DQN/LSM for scalability;
 - output to leverage - the exercise policy, not just the price;
@@ -130,7 +130,7 @@ res_sv = american_option_mdp_stoch_vol(
 print(f"Stochastic vol price: ${res_sv['price']:.4f}")
 ```
 
-## 6. How to Run american_option_pricer.py:
+## 6. How to Run american_option_pricer.py
 
 6.1. Install dependencies:
 ```
@@ -141,7 +141,7 @@ pip install numpy matplotlib scipy pandas
 python3 american_option_pricer.py
 ```
 
-## 7. Outputs:
+## 7. Outputs
 
 a) american_option_mdp:
 - plot_exercise_boundary.png;
