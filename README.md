@@ -16,9 +16,12 @@ Additionally below is a complete Python module american_option_pricer.py that:
 
 I suppose we're exploring sits at a intersection of quantitative finance, stochastic control, and computational decision theory. Let me clarify the practical relevance and best-use scenarios for the scripts american_option_mdp  and american_option_pricer.py.
 
-## 1. These scripts are specialized tools for pricing and analyzing American-style options, which differ from European options because they can be exercised at any time before expiration. This early-exercise feature makes them path-dependent and non-trivial to price.
+## 1. Analyzing American options
+
+These scripts are specialized tools for pricing and analyzing American-style options, which differ from European options because they can be exercised at any time before expiration. This early-exercise feature makes them path-dependent and non-trivial to price.
 
 Primary Use Cases:
+
 a) Derivatives pricing: accurate valuation of American puts/calls on equities, indices, or commodities—especially when dividends or stochastic volatility matter.
 b) Risk management: computing Greeks (e.g., delta, gamma) via perturbation of MDP value functions; stress-testing early-exercise behavior under volatile regimes.
 c) Hedging: extracting optimal exercise policies to inform automated execution or dynamic hedging strategies.
