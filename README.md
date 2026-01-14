@@ -31,14 +31,21 @@ c) Hedging: extracting optimal exercise policies to inform automated execution o
 d) Structured products: pricing exotic payoffs with embedded American features (e.g., callable convertibles, auto-callables).
 
 e) Academic research and teaching: demonstrating how optimal stopping = MDP with 2 actions, linking reinforcement learning and classical finance.
+
 May be the MDP formulation is exact for discretized state spaces and provides both price and policy—not just a number, but a decision rule (“exercise if S < X(t)”).
 
 ## 2. When should prefer these scripts over standard methods
+
 a) Low-dimensional problems (1–2 state variables: e.g., stock + vol) - MDP (FiniteHorizon), highly accurate, gives full policy.
+
 b) High-dimensional problems (multi-asset, path-dependent) - use DQN version - scales better than grid-based MDP.
+
 c) Benchmarking / Validation - compare MDP vs. binomial vs. LSM - builds confidence in results.
+
 d) Real-time pricing in production - avoid MDPtoolbox (slow for large grids); prefer analytical approximations or precomputed lookup tables.
+
 e) Stochastic volatility models (e.g., Heston-like) - 2D MDP or DQN  traditional trees struggle here.
+
 I suppose MDPtoolbox uses explicit state discretization - suffers from the curse of dimensionality. For >2 state variables, we should switch to deep RL or Monte Carlo with regression (LSM).
 
 ## 3. Recommendations for Analysis
