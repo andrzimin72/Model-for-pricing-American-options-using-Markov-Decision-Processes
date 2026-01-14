@@ -1,4 +1,4 @@
-# Analytic-model-for-pricing-American-options-using-Markov-Decision-Processes
+# Model-for-pricing-American-options-using-Markov-Decision-Processes
 
 American options involve an optimal stopping problem: at each time step, the holder chooses between exercising (and receiving intrinsic value) or continuing (and holding the option). This fits perfectly into a finite-horizon Markov Decision Process (MDP) framework. Below is a complete Python module american_option_mdp that:
 - uses MDPtoolbox correctly via FiniteHorizon;
