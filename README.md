@@ -152,5 +152,5 @@ b) american_option_pricer.py:
 - american_option_results_YYYYMMDD_HHMMSS.csv, contains: calibrated σ, model price, Greeks, calibration error;
 - exercise_boundary_YYYYMMDD_HHMMSS.png, high-resolution plot of the early-exercise boundary.
 
-#### P.S. 
+### P.S. 
 Additionally attached a Python script create_american_option_mdp_project.py that will auto-generate the entire project structure, including all source files, tests, and setup configuration. 
