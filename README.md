@@ -1,6 +1,6 @@
 ## Model-for-pricing-American-options-using-Markov-Decision-Processes
 
-American options involve an optimal stopping problem: at each time step, the holder chooses between exercising (and receiving intrinsic value) or continuing (and holding the option). This fits perfectly into a finite-horizon Markov Decision Process (MDP) framework. Below is a complete Python module american_option_mdp that:
+I think American options involve an optimal stopping problem: at each time step, the holder chooses between exercising (and receiving intrinsic value) or continuing (and holding the option). This fits perfectly into a finite-horizon Markov Decision Process (MDP) framework. This repository folder attached a complete, ready-to-run Python module american_option_mdp that:
 - uses MDPtoolbox correctly via FiniteHorizon;
 - prices American options under constant and stochastic volatility;
 - computes Greeks from the MDP value function;
@@ -153,4 +153,4 @@ b) american_option_pricer.py:
 - exercise_boundary_YYYYMMDD_HHMMSS.png, high-resolution plot of the early-exercise boundary.
 
 #### P.S. 
-Additionally attached a complete, ready-to-run Python script create_american_option_mdp_project.py that will auto-generate the entire american_option_mdp project structure, including all source files, tests, and setup configuration. 
+Additionally attached a Python script create_american_option_mdp_project.py that will auto-generate the entire project structure, including all source files, tests, and setup configuration. 
