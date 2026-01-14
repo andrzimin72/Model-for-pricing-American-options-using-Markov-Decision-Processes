@@ -132,15 +132,17 @@ print(f"Stochastic vol price: ${res_sv['price']:.4f}")
 pip install numpy matplotlib scipy pandas
 ```
 6.2. Run: 
-‘’’
+```
 python3 american_option_pricer.py
 ```
 
 ## 7. Outputs:
+
 a) american_option_mdp:
 - plot_exercise_boundary.png;
 - plot_value_function.png;
 - save_results.csv;
+
 b) american_option_pricer.py:
 - american_option_results_YYYYMMDD_HHMMSS.csv, contains: calibrated σ, model price, Greeks, calibration error;
 - exercise_boundary_YYYYMMDD_HHMMSS.png, high-resolution plot of the early-exercise boundary.
